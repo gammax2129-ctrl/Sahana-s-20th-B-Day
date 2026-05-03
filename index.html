@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sahana!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="canvas-container">
+        <canvas id="heartCanvas"></canvas>
+    </div>
+
+    <nav>
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('memories')">Memories</button>
+        <button onclick="showPage('wish')">Make a Wish</button>
+    </nav>
+
+    <main>
+        <!-- Page 1: Home -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <h1 class="reveal-text">Happy Birthday, <span>Sahana</span></h1>
+                <p class="subtext">Celebrating 20 years of awesomeness!</p>
+                <p class="date">03 • 05 • 2006</p>
+                <div class="glass-card">
+                    <p>Twenty years of being incredible. Today is all about you.</p>
+                </div>
+            </div>
+        </section>
+
+       <!-- Page 2: Visuals -->
+<section id="memories" class="page">
+    <h2 class="section-title">The Birthday Gallery</h2>
+    <p class="subtitle">Capturing Sahana’s best angles ✨</p>
+    
+    <div class="aesthetic-grid">
+        <div class="photo-card">
+            <img src="photo1.jpeg" alt="Sahana 1">
+            <div class="photo-tag">Classy</div>
+        </div>
+        <div class="photo-card">
+            <img src="photo2.jpeg" alt="Sahana 2">
+            <div class="photo-tag">Aesthetic</div>
+        </div>
+        <div class="photo-card">
+            <img src="photo3.jpg" alt="Sahana 3">
+            <div class="photo-tag">Nature</div>
+        </div>
+        <div class="photo-card">
+            <img src="photo4.jpeg" alt="Sahana 4">
+            <div class="photo-tag">Vibe</div>
+        </div>
+    </div>
+</section>
+
+        <!-- Page 3: The Message -->
+        <section id="wish" class="page">
+            <div class="letter-container">
+                <h2>To Sahana,</h2>
+                <p>"Happy 20th Birthday, Sahana! 🎂 It feels like just yesterday you were a teenager, but here you are entering a whole new decade. You’ve grown into such an incredible, talented person since 2006, and I’m so proud of everything you’re becoming. I hope today is as aesthetic and high-vibe as you are—full of cold coffee, 100% nature, and all the happiness in the world. Cheers to 20 years of you being you.</p>
+                <button class="btn-sparkle" onclick="createBurst()">Click for a Surprise</button>
+            </div>
+        </section>
+    </main>
+    <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
